@@ -26,7 +26,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(func_ir,&MyTHread::signal_frame,[&](cv::Mat& irImg_){
         irImg = irImg_.clone();
         MyUtils::Mat2QImage(irImg,irQimg);
-        qDebug()<<QString("ir红外width:%1;height:%2").arg(irImg.cols).arg(irImg.rows);
+        //qDebug()<<QString("ir红外width:%1;height:%2").arg(irImg.cols).arg(irImg.rows);
         this->update();
     });
     //===========================================================
@@ -39,7 +39,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(func_camera,&MyTHread::signal_frame,[&](cv::Mat& Img_){
         cameraImg = Img_.clone();
         MyUtils::Mat2QImage(cameraImg,cameraQimg);
-        qDebug()<<QString("camera width:%1;height:%2").arg(cameraImg.cols).arg(cameraImg.rows);
+        //qDebug()<<QString("camera width:%1;height:%2").arg(cameraImg.cols).arg(cameraImg.rows);
         this->update();
     });
 
