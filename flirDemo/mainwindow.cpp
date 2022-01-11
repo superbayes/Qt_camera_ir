@@ -47,13 +47,19 @@ MainWindow::MainWindow(QWidget *parent)
     //===========================================================
     //关闭线程
     connect(this,&MainWindow::destroyed,[&](){
+        if(thread_ir->isRunning())
+        {
         func_ir->flag_exitCamera=true;
         thread_ir->quit();
         thread_ir->wait();
+        }
 
+        if(thread_camera->isRunning())
+        {
         func_camera->flag_exitCamera=true;
         thread_camera->quit();
         thread_camera->wait();
+        }
         qDebug()<<"关闭线程====";
     });
 
