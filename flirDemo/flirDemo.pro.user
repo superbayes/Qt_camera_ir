@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.12.2, 2022-01-11T15:23:56. -->
+<!-- Written by QtCreator 4.12.2, 2022-01-11T19:00:07. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -321,7 +321,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">F:/MyCode/QT/MLX90640/flirDemo/build-flirDemo-Desktop_Qt_5_12_9_MSVC2017_64bit-Release</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default"></value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>

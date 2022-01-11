@@ -29,7 +29,6 @@ void MyTHread::videoThread(int deviceNo)
         if(flag_exitCamera==true) break;
         Capture>>this->frame;
         emit signal_frame(frame);
-        qDebug()<<"grab ir img=";
         QThread::msleep(1000/40);
     }
 

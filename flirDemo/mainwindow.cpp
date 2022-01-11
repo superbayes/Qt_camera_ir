@@ -39,7 +39,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(func_camera,&MyTHread::signal_frame,[&](cv::Mat& Img_){
         cameraImg = Img_.clone();
         MyUtils::Mat2QImage(cameraImg,cameraQimg);
-        qDebug()<<QString("ir摄相width:%1;height:%2").arg(cameraImg.cols).arg(cameraImg.rows);
+        qDebug()<<QString("camera width:%1;height:%2").arg(cameraImg.cols).arg(cameraImg.rows);
         this->update();
     });
 
